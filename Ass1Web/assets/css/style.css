@@ -329,15 +329,7 @@ p.services-1{
     margin-top: 10px;
 }
 .price .product{
-    padding: 30px 30px;
-    position: relative;
-    overflow: hidden;
-    background: rgb(241, 239, 239);
-    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-    z-index: 1;
-    text-align: center;
+    background-color: #e9e6e6;
 }
 .price p {
     margin-bottom: 20px;
@@ -346,7 +338,6 @@ p.services-1{
     font-family:"Open Sans" ,sans-serif;
 }
 .price h3 {
-    background: rgba(255, 255, 255, 0.1);
     color: rgb(3, 3, 3);
     font-size: 26px;
     padding: 10px 30px;
