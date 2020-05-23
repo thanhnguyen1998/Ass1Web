@@ -1,0 +1,412 @@
+body {
+  
+    color:#444444;
+    font-family: "Open Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 20px 0;
+}
+#header .logo{
+    font-size: 32px;
+    margin: 10px;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#header .logo a {
+    color: rgb(248, 244, 244);
+}
+#header .logo a:hover {
+    text-decoration: none;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+  
+#header.header-scrolled .logo a, #header.header-inner-pages .logo a {
+    color: #111111;
+}
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.nav-menu > ul {
+    display: flex;
+    margin-left: 500px;
+}
+
+.nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 25px;
+}
+  
+.nav-menu a {
+    display: block;
+    position: relative;
+    color: rgb(235, 232, 232);
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 0 4px;
+    letter-spacing: 0.4px;
+    font-family: "Nunito", sans-serif;
+}
+.nav-menu a:hover {
+    text-decoration: none;
+}
+  
+.nav-menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #d9e43c;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+  
+.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+    background: rgb(255, 253, 253);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+}
+
+.header-scrolled .nav-menu > ul > li > a, .header-inner-pages .nav-menu > ul > li > a {
+    color: #070101;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/lambo.jpg") top center;
+    background-size: cover;
+    position: relative;
+}
+  
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+  
+#hero h3 {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 26px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+  
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+  
+#hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 600;
+}
+#hero .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+section {
+    padding: 60px 0;
+}
+  
+.section-bg {
+    background-color: white;
+}
+  
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+  
+.section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    line-height: 1;
+    margin: 0;
+    background: #fdeff2;
+    color: #e43c5c;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+  
+.section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-title h3 span {
+    color: #e43c5c;
+}
+
+p.lambo {
+    font-size: 40px;
+    color :#e43c5c
+}
+
+p.lambo-2{
+    margin-top: 76px;
+}
+
+.section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+}
+  
+.introduction .content ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.introduction .content ul li {
+    padding-left: 28px;
+    position: relative;
+}
+.introduction .content ul span {
+    font-weight: 800;
+    color: #e43c5c
+}
+
+.introduction .content ul li + li {
+    margin-top: 10px;
+}
+  
+.introduction .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #e43c5c;
+    line-height: 1;
+}
+  
+.introduction .content p:last-child {
+    margin-bottom: 0;
+}
+
+/* */
+.services {
+    padding-bottom: 30px;
+}
+  
+.services .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(241, 239, 239);
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+}
+  
+.services .icon-box::before {
+    content: '';
+    position: absolute;
+    background: #fcebee;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.4s;
+    z-index: -1;
+}
+  
+.services .icon-box:hover::before {
+    background: #e0de6b;
+    top: 0;
+    border-radius: 0px;
+}
+  
+.services .icon {
+    margin-bottom: 15px;
+}
+  
+.services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #d3dd45;
+    transition: all 0.3s ease-in-out;
+}
+  
+.services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+  
+.services .title a {
+    color: #111;
+}
+
+.services .icon-box:hover .title a, .services .icon-box:hover .description {
+    color: #fff;
+}
+  
+.services .icon-box:hover .icon i {
+    color: #fff;
+}
+p.services-1{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.price .row{
+    padding: 30px;
+}
+.price .img-car{
+    margin-top: 10px;
+}
+.price .product{
+    padding: 30px 30px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(241, 239, 239);
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+}
+.price p {
+    margin-bottom: 20px;
+    color: #e7d63c;
+    font-size: 30px;
+    font-family:"Open Sans" ,sans-serif;
+}
+.price h3 {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(3, 3, 3);
+    font-size: 26px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+.price span {
+    color: #e43c5c;
+}
+
+.contact .info {
+    width: 100%;
+    background: #fff;
+}
+  
+.contact .info i {
+    font-size: 20px;
+    color: #d3dd45;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e9ecc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #493c3e;
+}
+  
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #816a6e;
+}
+  
+.contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+    background:  #d3dd45;
+    color: #fff;
+}
+
+  
+.contact .php-email-form button[type="submit"] {
+    background:  #d3dd45;
+    border: 0;
+    padding: 10px 28px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+  
