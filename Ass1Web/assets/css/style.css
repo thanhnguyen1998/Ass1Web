@@ -40,6 +40,11 @@ a{
 #header.header-scrolled .logo a, #header.header-inner-pages .logo a {
     color: #111111;
 }
+@media (max-width: 992px) {
+    #header .logo {
+      font-size: 28px;
+    }
+}
 .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -168,6 +173,11 @@ a{
     transition: 0.5s;
     border: 2px solid #fff;
     color: #fff;
+}
+@media (max-width: 992px) {
+    #hero h2 {
+      font-size: 28px;
+    }
 }
 
 section {
@@ -330,7 +340,7 @@ p.services-1{
 }
 .price .product{
     background-color: #e9e6e6;
-}
+}   
 .price p {
     margin-bottom: 20px;
     color: #e7d63c;
