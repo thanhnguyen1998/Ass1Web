@@ -14,7 +14,7 @@ a{
     z-index: 997;
     padding: 20px 0;
 }
-#header .logo{
+#header .lambo{
     font-size: 32px;
     margin: 10px;
     padding: 0;
@@ -24,10 +24,10 @@ a{
     text-transform: uppercase;
 }
 
-#header .logo a {
+#header .lambo a {
     color: rgb(248, 244, 244);
 }
-#header .logo a:hover {
+#header .lambo a:hover {
     text-decoration: none;
 }
 
@@ -37,14 +37,10 @@ a{
     padding: 12px 0;
   }
   
-#header.header-scrolled .logo a, #header.header-inner-pages .logo a {
+#header.header-scrolled .lambo a, #header.header-inner-pages .lambo a {
     color: #111111;
 }
-@media (max-width: 992px) {
-    #header .logo {
-      font-size: 28px;
-    }
-}
+
 .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -104,7 +100,7 @@ a{
     color: #070101;
 }
 
-#hero {
+#intro {
     width: 100%;
     height: 100vh;
     background: url("../img/lambo.jpg") top center;
@@ -112,7 +108,7 @@ a{
     position: relative;
 }
   
-#hero:before {
+#intro:before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -122,7 +118,7 @@ a{
     right: 0;
 }
   
-#hero .hero-container {
+#intro .intro-container {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -136,36 +132,27 @@ a{
     padding: 0 15px;
 }
   
-#hero h3 {
+#intro h3 {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
-    font-size: 26px;
+    font-size: 46px;
     padding: 10px 30px;
     margin-bottom: 30px;
     border-radius: 50px;
 }
   
-#hero h1 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: #fff;
-}
-  
-#hero h2 {
+#intro h2 {
     color: #eee;
     margin-bottom: 40px;
     font-size: 50px;
     font-weight: 600;
 }
-#hero .btn-get-started {
+#intro .btn-get-started {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 20px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 8px 30px 9px 30px;
@@ -174,12 +161,6 @@ a{
     border: 2px solid #fff;
     color: #fff;
 }
-@media (max-width: 992px) {
-    #hero h2 {
-      font-size: 28px;
-    }
-}
-
 section {
     padding: 60px 0;
 }
@@ -194,7 +175,7 @@ section {
 }
   
 .section-title h2 {
-    font-size: 13px;
+    font-size: 20px;
     letter-spacing: 1px;
     font-weight: 700;
     padding: 8px 20px;
@@ -203,7 +184,6 @@ section {
     background: #fdeff2;
     color: #e43c5c;
     display: inline-block;
-    text-transform: uppercase;
     border-radius: 50px;
 }
   
@@ -409,5 +389,32 @@ p.services-1{
     color: #fff;
     transition: 0.4s;
     border-radius: 50px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    #header .lambo {
+      font-size: 40px;
+    }
+    #intro h3{
+        font-size: 30px;
+    }
+    #intro h2{
+        font-size: 30px;
+    }
+    #intro .btn-get-started{
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width:480px) {
+    #header .lambo {
+      font-size: 70px;
+    }
+    #intro .btn-get-started{
+        font-size: 40px;
+        text-decoration: none;
+    }
 }
   
